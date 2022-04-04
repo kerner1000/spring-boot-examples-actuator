@@ -4,7 +4,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-@RequestMapping("hello")
+@RequestMapping("example")
 @RestController
 public class ExampleController {
 
@@ -14,7 +14,7 @@ public class ExampleController {
      *
      * @return an arbitrary example string
      */
-    @GetMapping(value="example", produces = "application/json")
+    @GetMapping(value="hello", produces = "application/json")
     public String exampleEndpoint(){
         return "hi!";
     }
